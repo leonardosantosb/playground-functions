@@ -40,20 +40,19 @@ function footballPoints(wins, ties) {
   
 }
 
-// Desafio 6 nao fiz
+// Desafio 6
 function highestCount(array) {
-  let repeticoes = 0;
-  let maior = 0;
-  
-  for (let index in array){
-    let verificaNumero = array[index]
-    for (let index2 in array){
-      if (verificaNumero === array[index2]){
-        repeticoes += 1;
+  let valor = 0;
+  for (let index = 0; index < array.length; index += 1){
+    for (let index2 = 0; index2 < array.length; index2 +=1 ){
+      if (array[index] === array[index2]){
+        valor +=1
       }
     }
   }
+  return valor
 }
+  
 
 // Desafio 7 nao fiz
 function catAndMouse(mouse, cat1, cat2){ 

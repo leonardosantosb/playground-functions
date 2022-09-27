@@ -40,25 +40,65 @@ function footballPoints(wins, ties) {
   
 }
 
-// Desafio 6
-function highestCount() {
-  // seu código aqui
+// Desafio 6 nao fiz
+function highestCount(array) {
+  let repeticoes = 0;
+  let maior = 0;
+  
+  for (let index in array){
+    let verificaNumero = array[index]
+    for (let index2 in array){
+      if (verificaNumero === array[index2]){
+        repeticoes += 1;
+      }
+    }
+  }
 }
 
-// Desafio 7
-function catAndMouse() {
-  // seu código aqui
-}
+// Desafio 7 nao fiz
+function catAndMouse(mouse, cat1, cat2) 
+  
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
-}
+function fizzBuzz(array) {
+  let arrayS = [];
 
-// Desafio 9
-function encode() {
-  // seu código aqui
+  for (index = 0; index < array.length; index += 1){
+    if (array[index] % 3 != 0 && array[index] % 5 !=0 ){
+       arrayS.push('bug!')
+    }
+      if (array[index] % 3 === 0 && array[index] % 5 === 0 ){
+        arrayS.push("fizzBuzz")
+      }
+      if (array[index] % 5 === 0 && array[index] % 3 != 0){
+        arrayS.push("buzz")
+      }
+      if (array[index] % 3 === 0 && array[index] % 5 != 0){
+      arrayS.push("fizz")   
+      }
+  }
+  return console.log(arrayS)
 }
+fizzBuzz([9, 25])
+// Desafio 9
+function encode(string) {
+  let codificada 
+  for (index = 0; index < string.length; string += 1){
+    if(string[index] === a){
+       codificada.push(1)
+    }if(string[index] === e){
+      codificada.push(2)
+    }if(string[index] === i){
+      codificada.push(3)
+    }if(string[index] === o){
+      codificada.push(4)
+    }if(string[index] === u){
+      codificada.push(5)
+    }
+  }
+  
+}
+return console.log(codificada)
 function decode() {
   // seu código aqui
 }

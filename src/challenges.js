@@ -24,7 +24,9 @@ function splitSentence(frase) {
 function concatName(array) {
  let primeiroItem =  array[0]
  let segundoItem = array[array.length -1]
-return console.log(segundoItem + ', '+ primeiroItem)
+ let resultado = (segundoItem + ', ' + primeiroItem)
+
+ return resultado;
 
 }
 concatName(['foguete', 'não', 'tem', 'ré'])

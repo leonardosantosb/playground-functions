@@ -21,13 +21,21 @@ function splitSentence(frase) {
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
-}
+function concatName(array) {
+ let primeiroItem =  array[0]
+ let segundoItem = array[array.length -1]
+return console.log(segundoItem + ', '+ primeiroItem)
 
+}
+concatName(['foguete', 'não', 'tem', 'ré'])
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(wins, ties) {
+  let pontosVitoria = wins * 3; 
+  let pontosEmpate = ties * 1;
+  let resultado;
+  resultado = pontosVitoria + pontosEmpate;
+  return resultado;
+  
 }
 
 // Desafio 6

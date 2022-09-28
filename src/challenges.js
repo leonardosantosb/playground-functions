@@ -145,9 +145,23 @@ decode ('h3 th2r2!')
 
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(array, string) {
+ let retorno = []
+
+ if (array.length === 0){
+  retorno= "Vazio!"
+ }
+
+ for (let index = 0; index < array.length; index += 1){
+  
+  if(array.length != 0){
+    array.sort()
+    retorno.push({'tech': array[index], 'name': string})
+  }
+  
+  }return retorno
+ }
+
 
 module.exports = {
   calcArea,

@@ -1,4 +1,4 @@
-// Desafio 1
+// Desafio 1 concluido
 function compareTrue(animal1, animal2) {
   if (animal1 === true && animal2 === true){
     return true;
@@ -6,21 +6,21 @@ function compareTrue(animal1, animal2) {
   
 }
 
-// Desafio 2
+// Desafio 2 concluido
 function calcArea(base, height) {
   let resultado = (base*height)/2
   return resultado;
   
 }
 
-// Desafio 3
+// Desafio 3 concluido
 function splitSentence(frase) {
   let resultado = frase.split(" ")
   return resultado;
   
 }
 
-// Desafio 4
+// Desafio 4 concluido
 function concatName(array) {
  let primeiroItem =  array[0]
  let segundoItem = array[array.length -1]
@@ -30,7 +30,7 @@ function concatName(array) {
 
 }
 concatName(['foguete', 'não', 'tem', 'ré'])
-// Desafio 5
+// Desafio 5 concluido
 function footballPoints(wins, ties) {
   let pontosVitoria = wins * 3; 
   let pontosEmpate = ties * 1;
@@ -54,7 +54,7 @@ function highestCount(array) {
 }
   
 
-// Desafio 7 nao fiz
+// Desafio 7 concluido
 function catAndMouse(mouse, cat1, cat2){ 
   let distancia1 = Math.abs(mouse - cat1);
   let distancia2 = Math.abs(mouse - cat2);
@@ -91,31 +91,53 @@ function fizzBuzz(array) {
   return arrayS
 }
 
-// Desafio 9
+// Desafio 9 nao concluido
 function encode(string) {
-  let array = string.split('')
   let codificada = [];
 
-  for (index = 0; index < array.length; string += 1){
-    if(array[index] === 'a'){
-       codificada.push(1)
-    }if(string[index] === 'e'){
-      codificada.push(2)
-    }if(string[index] === 'i'){
-      codificada.push(3)
-    }if(string[index] === 'o'){
-      codificada.push(4)
-    }if(string[index] === 'u'){
-      codificada.push(5)
+  for (index = 0; index < string.length; index += 1){
+    if(string[index] === 'a'){
+       codificada.push('1')
+    }else if(string[index] === 'e'){
+      codificada.push('2')
+    }else if(string[index] === 'i'){
+      codificada.push('3')
+    }else if(string[index] === 'o'){
+      codificada.push('4')
+    }else if(string[index] === 'u'){
+      codificada.push('5')
+    }else{
+      codificada.push(string[index])
     }
   }
-  return console.log(codificada.join())
+  return console.log(codificada.join(''))
 }
 encode ('hi there!')
  
-function decode() {
-  // seu código aqui
+function decode(string) {
+
+  let decodificada = [];
+  
+  for (index = 0; index < string.length; index += 1){
+
+    if(string[index] === '1'){
+        decodificada.push('a')
+    }else if(string[index] === '2'){
+        decodificada.push('e')
+    }else if(string[index] === '3'){
+        decodificada.push('i')
+    }else if(string[index] === '4'){
+        decodificada.push('o')
+    }else if(string[index] === '5'){
+        decodificada.push('u')
+    }else{
+        decodificada.push(string[index])
+    }
+  }
+  return console.log(decodificada.join(''))
 }
+decode ('h3 th2r2!')
+
 
 // Desafio 10
 function techList() {

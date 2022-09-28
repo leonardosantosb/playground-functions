@@ -43,16 +43,21 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount(array) {
   let valor = 0;
+  let vezes = 0;
   for (let index = 0; index < array.length; index += 1){
-    for (let index2 = 0; index2 < array.length; index2 +=1 ){
-      if (array[index] === array[index2]){
-        valor +=1
-      }
+    if (array[index] > valor){
+      valor = array[index]
+    }
+  }for (let index2 = 0; index2 < array.length; index2 += 1){
+    if(valor === array[index2]){
+      vezes += 1
     }
   }
-  return valor
-}
   
+  
+  return vezes;
+}
+  highestCount ([0, 0, 0])
 
 // Desafio 7 concluido
 function catAndMouse(mouse, cat1, cat2){ 
@@ -61,11 +66,11 @@ function catAndMouse(mouse, cat1, cat2){
   
 
   if (distancia1 < distancia2 ){
-  return console.log(('cat1'))
+  return ('cat1')
   }else if (distancia2 < distancia1){
-  return console.log(('cat2'))
+  return ('cat2')
   }
-  return console.log("os gatos trombam e o rato foge") 
+  return "os gatos trombam e o rato foge"
 
 }
   catAndMouse (1, 1, 2)
@@ -91,7 +96,7 @@ function fizzBuzz(array) {
   return arrayS
 }
 
-// Desafio 9 nao concluido
+// Desafio 9 concluido
 function encode(string) {
   let codificada = [];
 
@@ -110,7 +115,7 @@ function encode(string) {
       codificada.push(string[index])
     }
   }
-  return console.log(codificada.join(''))
+  return codificada.join('')
 }
 encode ('hi there!')
  
@@ -134,7 +139,7 @@ function decode(string) {
         decodificada.push(string[index])
     }
   }
-  return console.log(decodificada.join(''))
+  return decodificada.join('')
 }
 decode ('h3 th2r2!')
 

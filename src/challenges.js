@@ -56,19 +56,19 @@ function highestCount(array) {
 
 // Desafio 7 nao fiz
 function catAndMouse(mouse, cat1, cat2){ 
-  let distancia1 = cat1 - mouse;
-  let distancia2 = cat2 - mouse;
+  let distancia1 = Math.abs(mouse - cat1);
+  let distancia2 = Math.abs(mouse - cat2);
   
 
   if (distancia1 < distancia2 ){
-  return ('cat1')
+  return console.log(('cat1'))
   }else if (distancia2 < distancia1){
-  return ('cat2')
+  return console.log(('cat2'))
   }
-  return "os gatos trombam e o rato foge" 
+  return console.log("os gatos trombam e o rato foge") 
 
 }
-  
+  catAndMouse (1, 1, 2)
 
 // Desafio 8 concluido
 function fizzBuzz(array) {
